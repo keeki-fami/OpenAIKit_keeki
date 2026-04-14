@@ -61,6 +61,10 @@ public enum ChatModels: String, Codable, CustomStringConvertible {
 
     /// Snapshot of gpt-4-32 from June 13th 2023. Unlike gpt-4-32k, this model will not receive updates, and will be deprecated 3 months after a new version is released.
     case gpt4_32k0613 = "gpt-4-32k-0613"
+    
+    // MARK: GPT-5 Models
+    
+    case gpt5_4_nano = "gpt-5.4-nano"
 
     /// The maximum tokens the models can read
     public var maxTokens: [String : Int] {
@@ -74,7 +78,8 @@ public enum ChatModels: String, Codable, CustomStringConvertible {
             "gpt-4": 8192,
             "gpt-4-0613": 8192,
             "gpt-4-32k": 32768,
-            "gpt-4-32k-0613": 32768
+            "gpt-4-32k-0613": 32768,
+            "gpt-5.4-nano": 4000
         ]
     }
 
