@@ -31,7 +31,7 @@ let package = Package(
     platforms: [.iOS(.v13), .macOS(.v10_15), .watchOS(.v6), .tvOS(.v13)],
     products: [
         .library(
-            name: "OpenAIKit_keeki",
+            name: "OpenAIKit",
             targets: ["OpenAIKit"])
     ],
     dependencies: [
