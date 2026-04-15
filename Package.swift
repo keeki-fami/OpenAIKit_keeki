@@ -27,18 +27,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "OpenAIKit_keeki",
+    name: "OpenAIKit",
     platforms: [.iOS(.v13), .macOS(.v10_15), .watchOS(.v6), .tvOS(.v13)],
     products: [
         .library(
-            name: "OpenAIKit_keeki",
-            targets: ["OpenAIKit_keeki"])
+            name: "OpenAIKit",
+            targets: ["OpenAIKit"])
     ],
     dependencies: [
     ],
     targets: [
         .target(
-            name: "OpenAIKit_keeki",
+            name: "OpenAIKit",
             dependencies: [],
             path: "Sources",
             swiftSettings: [
@@ -47,7 +47,7 @@ let package = Package(
         ),
         .testTarget(
             name: "OpenAIKitTests",
-            dependencies: ["OpenAIKit_keeki"],
+            dependencies: ["OpenAIKit"],
             path: "Tests",
             resources: [.process("Resources")],
             swiftSettings: [
